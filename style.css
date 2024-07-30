@@ -1,0 +1,137 @@
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #636363;
+}
+
+header {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    height: 200%
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+main {
+    text-align: center;
+    padding: 2em;
+    width: 200%;
+    max-width: 800px;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.myButton {
+	box-shadow:inset 0px 0px 0px 4px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:24px;
+	font-weight:bold;
+	padding:13px 20px;
+	text-decoration:none;
+	text-shadow:0px 9px 4px #283966;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive columns */
+  gap: 1em; /* Space between sections */
+  margin-bottom: 5em; /* Margin below the container */
+}
+
+.section {
+  background-color: #4CAF50;
+  color: rgb(255, 255, 255);
+  padding: 2em;
+  border-radius: 5px;
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.section h2 {
+  font-size: 2em; /* Adjust this value to make section headings bigger */
+  margin-bottom: 1em;
+}
+
+.section h3 {
+  font-size: 2em; /* Adjust this value to make section headings bigger */
+  margin-bottom: 1em;
+}
+
+.section p {
+  font-size: 1.2em; /* Adjust this value to make paragraph text bigger */
+  line-height: 1.6; /* Adjust line height for better readability */
+}
+
+body {
+  overflow-x: hidden; /* Hides horizontal overflow */
+}
+
+/* Ensure the body and html take up the full height */
+
+
+/* Main content styling */
+.content {
+  min-height: 100vh; /* Ensures content takes up at least the full height of the viewport */
+  padding-bottom: 50px; /* Height of the footer */
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: -50px; /* Initially hide the footer */
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  color: rgb(235, 164, 164);
+  text-align: center;
+  line-height: 50px; /* Center the text vertically */
+  transition: bottom 0.3s ease; /* Smooth transition */
+}
+
+.logo{
+  width: 100%;
+}
